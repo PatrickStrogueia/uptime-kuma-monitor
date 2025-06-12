@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    volumes:
+      - uptime-kuma-data:/app/data
+    ports:
+      - 3001:3001 # O Render não usará essa porta diretamente, mas é boa prática ter
+    restart: always # Garante que o container reinicie se houver um problema
+volumes:
+  uptime-kuma-data:

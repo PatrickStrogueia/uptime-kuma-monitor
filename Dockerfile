@@ -10,4 +10,4 @@ EXPOSE 3001
 
 # Comando para iniciar o Uptime Kuma
 # O Render executa isso automaticamente se o ambiente for 'Docker'
-CMD ["node", "server.js"]
+#CMD ["node", "server.js"]
